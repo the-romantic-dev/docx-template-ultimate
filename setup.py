@@ -14,17 +14,24 @@ setup(
     description='Ultimate lib for Word document template filling',
     long_description=readme(),
     long_description_content_type='text/markdown',
-    url='github.com',
+    url='https://github.com/the-romantic-dev/docx-template-ultimate',
     packages=find_packages(),
-    install_requires=['requests>=2.25.1'],
+    install_requires=["latex2mathml>=3.77.0",
+                      "lxml>=5.3.0",
+                      "mpmath>=1.3.0",
+                      "pillow>=11.1.0",
+                      "python-docx>=1.1.2",
+                      "sympy>=1.13.3",
+                      "typing_extensions>=4.12.2"
+                      ],
     classifiers=[
         'Programming Language :: Python :: 3.11',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent'
     ],
-    keywords='files speedfiles ',
+    keywords='docx template ultimate',
     project_urls={
-        'GitHub': 'your_github'
+        'GitHub': 'https://github.com/the-romantic-dev'
     },
-    python_requires='>=3.6'
+    python_requires='>=3.11'
 )
