@@ -1,1 +1,6 @@
 test.py
+.idea/*
+!.idea/codeStyles
+!.idea/inspectionProfiles
+!.idea/fileTemplates
+!.idea/vcs.xml
