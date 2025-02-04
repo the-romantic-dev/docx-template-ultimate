@@ -1,6 +1,6 @@
 from sympy import Rational, Expr, Symbol, latex, pretty
 
-from sympy_prettifier import rational_to_latex, rational_to_string
+from . import rational_to_latex, rational_to_string
 
 
 def _get_var_func(var: Symbol | str, is_latex: bool):
