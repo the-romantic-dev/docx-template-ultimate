@@ -22,7 +22,8 @@ setup(
                       "pillow>=11.1.0",
                       "python-docx>=1.1.2",
                       "sympy>=1.13.3",
-                      "typing_extensions>=4.12.2"
+                      "typing_extensions>=4.12.2",
+                      "docx2pdf>=0.1.8"
                       ],
     classifiers=[
         'Programming Language :: Python :: 3.11',
