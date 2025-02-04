@@ -1,4 +1,4 @@
-from dtu.document.xml_namespaces import m, w
+from dtu.namespaces.xml_namespaces import m, w
 from lxml.etree import _Element, Element, SubElement
 from ..util import is_math_element, elements_from_xml
 

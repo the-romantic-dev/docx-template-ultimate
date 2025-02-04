@@ -3,9 +3,9 @@ import random
 import lxml.etree as letree
 from lxml.etree import _Element
 
-from docx.docx_namespaces import w, w14
-from prettifier.elements.util import elements_from_xml
-from model.entities.formula import Formula
+from dtu.namespaces import w, w14
+from dtu.sympy_prettifier.omml.util import elements_from_xml
+from .formula import Formula
 
 
 def create_element(tag: str, nsmap: dict = {"w": w}, attr: dict = {}) -> _Element:

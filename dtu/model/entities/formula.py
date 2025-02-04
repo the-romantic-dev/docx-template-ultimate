@@ -3,9 +3,9 @@ from copy import copy
 import lxml.etree
 from lxml import etree
 from lxml.etree import _Element
-from docx.docx_namespaces import m, w
+from dtu.namespaces.xml_namespaces import m, w
 
-from converter.omml_converter import latex2omml
+from dtu.converter import latex2omml
 
 namespaces = {
     "w": w,

@@ -10,8 +10,8 @@ from docx.document import Document as DocumentType, _Body
 from docx.text.paragraph import Paragraph
 from docx2pdf import convert
 
-from insert_key import InsertKey
-from isolate_key_runs import isolate_key_runs
+from .insert_key import InsertKey
+from .isolate_key_runs import isolate_key_runs
 from ..util import keys_in_run, can_replace_paragraph, replace_paragraph_with_elements, \
     get_document_elements, add_picture
 from dtu.model.entities.formula import Formula
@@ -31,7 +31,7 @@ class DocumentTemplate:
         self.root_template: DocumentTemplate | None = None
         self._insert_keys: dict[int, InsertKey] | None = None
 
-    def save(self, save_path: Path, document_name: str = "output.document", add_pdf: bool = True):
+    def save(self, save_path: Path, document_name: str = "output.namespaces", add_pdf: bool = True):
         """Сохраняет документ и при необходимости конвертирует его в PDF."""
         docx_path = save_path.joinpath(document_name)
         self.document.save(docx_path.absolute().as_posix())

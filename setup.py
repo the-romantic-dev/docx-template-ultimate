@@ -11,7 +11,7 @@ setup(
     version='0.0.1',
     author='the-romantic-dev',
     author_email='yvalentinasovofficial@gmail.com',
-    description='Ultimate lib for Word document template filling',
+    description='Ultimate lib for Word namespaces template filling',
     long_description=readme(),
     long_description_content_type='text/markdown',
     url='https://github.com/the-romantic-dev/docx-template-ultimate',

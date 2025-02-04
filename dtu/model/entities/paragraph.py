@@ -1,9 +1,9 @@
 import lxml.etree
 from lxml.etree import _Element
 
-from docx.docx_namespaces import w
-from model.entities.formula import Formula
-from model.entities.plain_text import PlainText
+from dtu.namespaces import w
+from .formula import Formula
+from .plain_text import PlainText
 
 
 def create_run(plain_text: PlainText) -> _Element:

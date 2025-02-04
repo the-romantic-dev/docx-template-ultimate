@@ -5,7 +5,7 @@ from pathlib import Path
 from docx.document import Document
 from docx.document import Document as DocumentType
 
-from document_template import DocumentTemplate
+from dtu.model.template import DocumentTemplate
 from dtu.model.entities.formula import Formula
 from dtu.model.entities.paragraph import Paragraph as MyParagraph
 from dtu.model.entities.table import Table

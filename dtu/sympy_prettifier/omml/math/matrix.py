@@ -3,11 +3,11 @@ from lxml import etree as lxml_etree
 from lxml.etree import _Element
 from sympy import Matrix
 
-from document.xml_namespaces import m as m_ns, w as w_ns
-from converter.omml_converter import latex2omml
+from dtu.namespaces import m as m_ns, w as w_ns
+from dtu.converter import latex2omml
 from .braces import BraceType, braces
 from ..util import elements_from_xml, is_math_element
-from sympy_prettifier import rational_to_latex
+from dtu.sympy_prettifier.latex import rational_to_latex
 
 
 def matrix_from_elements(elements: list[list[_Element]], alignment: str, brace_type: BraceType = None):

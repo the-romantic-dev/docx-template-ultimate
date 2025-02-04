@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from document_template import DocumentTemplate
+from .document_template import DocumentTemplate
 
 
 class TemplateFiller:

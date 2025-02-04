@@ -4,7 +4,7 @@ from pathlib import Path
 from lxml import etree as lxml_etree
 from lxml.etree import _Element
 
-from dtu.document.xml_namespaces import m, w
+from dtu.namespaces.xml_namespaces import m, w
 
 
 def is_math_element(element):

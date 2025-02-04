@@ -3,7 +3,7 @@ from enum import Enum
 from lxml import etree as lxml_etree
 from lxml.etree import _Element
 
-from document.xml_namespaces import m, w
+from dtu.namespaces import m, w
 from ..util import is_math_element, elements_from_xml
 
 

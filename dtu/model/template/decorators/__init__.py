@@ -1,2 +1,2 @@
-from key_filler import *
-from template_filler import *
+from .key_filler import *
+from .template_filler import *
