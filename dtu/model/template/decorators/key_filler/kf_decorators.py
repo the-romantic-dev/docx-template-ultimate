@@ -3,13 +3,13 @@ from functools import wraps
 from pathlib import Path
 
 from docx.document import Document
-
-from model.template.document_template import DocumentTemplate
-from model.entities.formula import Formula
-from model.entities.table import Table
-from model.template.template_filler import TemplateFiller
-from model.entities.paragraph import Paragraph as MyParagraph
 from docx.document import Document as DocumentType
+
+from document_template import DocumentTemplate
+from dtu.model.entities.formula import Formula
+from dtu.model.entities.paragraph import Paragraph as MyParagraph
+from dtu.model.entities.table import Table
+from dtu.model.template.template_filler import TemplateFiller
 
 
 class InsertType(Enum):

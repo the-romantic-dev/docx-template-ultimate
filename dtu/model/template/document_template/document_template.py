@@ -1,21 +1,22 @@
 from __future__ import annotations
 
 import os
+from collections.abc import Callable
+from copy import copy
 from pathlib import Path
+
 from docx import Document
 from docx.document import Document as DocumentType, _Body
 from docx.text.paragraph import Paragraph
 from docx2pdf import convert
-from collections.abc import Callable
-from model.entities.paragraph import Paragraph as MyParagraph
 
-from model.element_creator import copy_paragraph
-from model.entities.formula import Formula
-from model.template.insert_key import InsertKey
-from model.template.isolate_key_runs import isolate_key_runs
-from model.entities.table import Table
-from model.template.util import keys_in_run, can_replace_paragraph, replace_paragraph_with_elements, \
+from insert_key import InsertKey
+from isolate_key_runs import isolate_key_runs
+from ..util import keys_in_run, can_replace_paragraph, replace_paragraph_with_elements, \
     get_document_elements, add_picture
+from dtu.model.entities.formula import Formula
+from dtu.model.entities.paragraph import Paragraph as MyParagraph
+from dtu.model.entities.table import Table
 
 
 class DocumentTemplate:
@@ -172,3 +173,9 @@ class DocumentTemplate:
                 parent.remove(ik.run._r)
 
         self._insert(key=key, insert_func=insert_func, report=" -- DELETED -- ")
+
+
+def copy_paragraph(paragraph: Paragraph) -> Paragraph:
+    new_elem = copy(paragraph._p)
+    new_paragraph = Paragraph(p=new_elem, parent=paragraph._parent)
+    return new_paragraph

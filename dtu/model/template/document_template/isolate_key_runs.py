@@ -1,12 +1,14 @@
+from copy import copy
 from dataclasses import dataclass
 from enum import Enum, auto
+
 from docx.document import Document as DocumentType
 from docx.oxml import CT_R
 from docx.text.paragraph import Paragraph
 from docx.text.run import Run
 from lxml.etree import _Element
-from model.element_creator import copy_run
-from model.template.util import short_tag
+
+from dtu.model.template.util import short_tag
 
 
 class KeyParseState(Enum):
@@ -136,4 +138,7 @@ def isolate_key_runs(document: DocumentType):
         parent.remove(run._r)
 
 
-
+def copy_run(run: Run) -> Run:
+    new_elem = copy(run._r)
+    new_run = Run(r=new_elem, parent=run._parent)
+    return new_run
