@@ -4,7 +4,7 @@ import lxml.etree as letree
 from lxml.etree import _Element
 
 from dtu.namespaces import w, w14
-from dtu.sympy_prettifier.omml.util import elements_from_xml
+from dtu.xml.util import elements_from_xml
 from .formula import Formula
 
 

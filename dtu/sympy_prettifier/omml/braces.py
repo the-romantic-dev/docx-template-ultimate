@@ -4,7 +4,7 @@ from lxml import etree as lxml_etree
 from lxml.etree import _Element
 
 from dtu.namespaces import m, w
-from ..util import is_math_element, elements_from_xml
+from dtu.xml.util import is_math_element, elements_from_xml
 
 
 class BraceType(Enum):

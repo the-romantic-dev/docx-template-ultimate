@@ -1,6 +1,6 @@
 from dtu.namespaces.xml_namespaces import m, w
 from lxml.etree import _Element, Element, SubElement
-from ..util import is_math_element, elements_from_xml
+from dtu.xml.util import is_math_element, elements_from_xml
 
 
 def sup(math_element: _Element, sup_element: _Element) -> _Element:

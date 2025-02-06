@@ -6,7 +6,7 @@ from sympy import Matrix
 from dtu.namespaces import m as m_ns, w as w_ns
 from dtu.converter import latex2omml
 from .braces import BraceType, braces
-from ..util import elements_from_xml, is_math_element
+from dtu.xml.util import elements_from_xml, is_math_element
 from dtu.sympy_prettifier.latex import rational_to_latex
 
 
