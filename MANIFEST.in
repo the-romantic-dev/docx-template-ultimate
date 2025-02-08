@@ -1,1 +1,1 @@
-include dtu/converter/*.xslt
+include dtu/converter/*.xsl

@@ -18,7 +18,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,  # Включает файлы из MANIFEST.in
     package_data={
-        'dtu.converter': ['*.xslt'],  # Если xslt-файл лежит в папке пакета
+        'dtu.converter': ['*.xsl'],  # Если xslt-файл лежит в папке пакета
     },
     install_requires=["latex2mathml>=3.77.0",
                       "lxml>=5.3.0",
