@@ -16,6 +16,10 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/the-romantic-dev/docx-template-ultimate',
     packages=find_packages(),
+    include_package_data=True,  # Включает файлы из MANIFEST.in
+    package_data={
+        'dtu': ['*.xslt'],  # Если xslt-файл лежит в папке пакета
+    },
     install_requires=["latex2mathml>=3.77.0",
                       "lxml>=5.3.0",
                       "mpmath>=1.3.0",
